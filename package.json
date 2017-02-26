@@ -1,0 +1,22 @@
+{
+  "name": "wp-mysql-dump-deploy",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonreshetov/wp-mysql-dump-deploy.git"
+  },
+  "keywords": [
+    "mysql",
+    "dump",
+    "wordpress",
+    "wp"
+  ],
+  "description": "Local db dump, replace the local path on server path & deploy",
+  "author": "Anton Reshetov <reshetov.art@gmail.com> (http://web.antonreshetov.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-shell": "^0.6.1"
+  }
+}
