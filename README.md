@@ -1,13 +1,13 @@
-## WordPress MySQL Dump Deploy
+# WordPress MySQL Dump Deploy
 
-Local db dump, replace the local path on server path & deploy
+Local DB dump, replace the local path on server path & deploy
 
 ##System Preparation
 
 To use this, you'll need the following things installed on your machine.
 
 1. [NodeJs](http://nodejs.org/) - use the installer.
-2. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
+2. [GulpJS](https://github.com/gulpjs/gulp) - `npm install -g gulp` (mac users may need sudo)
 
 ##Local Installation
 
