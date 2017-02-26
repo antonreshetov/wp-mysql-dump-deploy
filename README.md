@@ -1,4 +1,4 @@
-## WP MySQL Dump Deploy
+## WordPress MySQL Dump Deploy
 
 Local db dump, replace the local path on server path & deploy
 
