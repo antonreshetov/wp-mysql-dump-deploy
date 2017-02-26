@@ -15,15 +15,15 @@ Clone this repo, or download it into a directory and run `npm install` from insi
 
 ##MySQL Preparation
 
-1. Modify configuration:
+Modify configuration:
 
 ```bash
 nano /etc/mysql/my.cnf
 ```
-find `bind-address` and change to `0.0.0.0` to give remote access.
+Find `bind-address` and change to `0.0.0.0` to give remote access.
 
 
-2. Entry mysql to give privileges: 
+Entry mysql to give privileges: 
 
 ```sql
 GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
@@ -31,13 +31,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT
 FLUSH PRIVILEGES;
 ```
 
-3. Restart mysql
+Restart mysql
 
 ```bash
 sudo service mysql restart
 ```
 
-4. Add to your mysql server firewall the following rule:
+Add to your mysql server firewall the following rule:
 
 ```bash
 sudo ufw allow from IP_FROM_YOU_CONNECT to any port 3306
@@ -46,6 +46,9 @@ sudo ufw allow from IP_FROM_YOU_CONNECT to any port 3306
 
 
 ## Usage
+
+#####Variables:
+
 * `localDB = 'mylocalbase'`
 * `remoteDB = 'myremotebase'`
 * `localPath = 'http://site.dev'`
@@ -53,6 +56,13 @@ sudo ufw allow from IP_FROM_YOU_CONNECT to any port 3306
 * `server = 'server IP'`
 * `user = 'myuser'`
 * `pass = 'mypassword'`
+
+#####Gulp tasks:
+
+* `gulp dump` - Dump DB
+* `gulp replace` - Replace local path on server path
+* `gulp deploy` - Deploy DB to server
+
 
 ## License
 MIT © 2017 [Anton Reshetov](http://web.antonreshetov.com)
