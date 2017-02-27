@@ -15,7 +15,7 @@ Clone this repo, or download it into a directory and run `npm install` from insi
 
 ## MySQL Preparation
 
-Modify configuration:
+Modify the mysql configuration on the server:
 
 ```bash
 nano /etc/mysql/my.cnf
