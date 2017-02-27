@@ -1,19 +1,19 @@
-# WordPress MySQL Dump Deploy
+# WP MySQL Dump Deploy
 
-Local DB dump, replace the local path on server path & deploy
+Dump the local wordpress database, replace the local path on server path and deploy.
 
-##System Preparation
+## System Preparation
 
 To use this, you'll need the following things installed on your machine.
 
 1. [NodeJs](http://nodejs.org/) - use the installer.
 2. [GulpJS](https://github.com/gulpjs/gulp) - `npm install -g gulp` (mac users may need sudo)
 
-##Local Installation
+## Local Installation
 
 Clone this repo, or download it into a directory and run `npm install` from inside the directory.
 
-##MySQL Preparation
+## MySQL Preparation
 
 Modify configuration:
 
@@ -43,21 +43,21 @@ Add to your mysql server firewall the following rule:
 sudo ufw allow from IP_FROM_YOU_CONNECT to any port 3306
 ```
 
-
-
 ## Usage
 
-#####Variables:
+##### Variables:
 
-* `localDB = 'mylocalbase'`
-* `remoteDB = 'myremotebase'`
-* `localPath = 'http://site.dev'`
-* `remotePath = 'http://site.com'`
-* `server = 'server IP'`
-* `user = 'myuser'`
-* `pass = 'mypassword'`
+* `local.db = 'mylocalbase'`
+* `local.path = 'http://site.dev'`
+* `local.user = 'myuser'`
+* `local.pass = 'mypassword'`
+* `remote.db = 'myremotebase'`
+* `remote.path = 'http://site.com'`
+* `remote.server = 'server IP'`
+* `remote.user = 'myuser'`
+* `remote.pass = 'mypassword'`
 
-#####Gulp tasks:
+##### Gulp tasks:
 
 * `gulp dump` - Dump DB
 * `gulp replace` - Replace local path on server path
@@ -66,5 +66,3 @@ sudo ufw allow from IP_FROM_YOU_CONNECT to any port 3306
 
 ## License
 MIT © 2017 [Anton Reshetov](http://web.antonreshetov.com)
-
-
